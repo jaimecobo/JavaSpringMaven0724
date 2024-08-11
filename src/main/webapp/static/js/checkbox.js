@@ -1,20 +1,22 @@
-function updateStatus() {
-    var checkbox = document.getElementById('visitedCheckbox');
-    var statusField = document.getElementById('statusField');
 
-    // Set the hidden field value based on the checkbox status
-    statusField.value = checkbox.checked ? 'true' : 'false';
+const checkbox = document.getElementById('cityVisited');
+const label = document.getElementById('labelVisitedOrNot');
 
-    // Prevent the form from being submitted normally
-    event.preventDefault();
-
-    // Use Fetch API to send the data asynchronously
-    fetch('/visitedcity/SaveAsVisitedCity', {
-        method: 'POST',
-        body: JSON.stringify({status: statusField.value}),
-        headers: {'Content-Type': 'application/json'}
-    })
-        .then(response => response.text())
-        .then(data => console.log(data))
+checkbox.addEventListener('change', function() {
+    var statusField = this.checked ? 1 : 0;
+    console.log("checked " + this.checked);
+    if (this.checked) {
+        label.textContent = 'Visited';
+        console.log("Visited")
+    } else {
+        label.textContent = 'Not visited';
+        console.log("Not visited")
+    }
+    fetch(`/visitedcity/SaveAsVisitedCity?status=`+statusField+`&cityId=${cityKey.id}`, {})
+        .then(data => {console.log('success', data);})
         .catch(error => console.error('Error:', error));
-}
+
+    console.log("checkbox.checked: " + checkbox.checked);
+    console.log("statusField: " + statusField);
+
+});
