@@ -21,7 +21,7 @@
     <tr><td><b>Ending date</b></td><td>${eventKey.endingDate}</td></tr>
     <tr><td><b>Creation date</b></td><td>${eventKey.createdAt}</td></tr>
     <tr><td><b>Event website URL</b></td><td>${eventKey.eventWebUrl}</td></tr>
-    <tr><td><b>Event image</b></td><td><img src="${eventKey.eventImageUrl}"/></td></tr>
+    <tr><td><b>Event image</b></td><td><img id="eventImage" src="${eventKey.eventImageUrl}"/></td></tr>
     <tr><td></td><td><a href="${pageContext.request.contextPath}/event/edit-event?eventId=${eventKey.id}">edit by @RequestParam</a></td></tr>
 </table>
 
