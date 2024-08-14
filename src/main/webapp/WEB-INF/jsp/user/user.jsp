@@ -170,6 +170,36 @@
 </section>
 
 
+<section style="background-color:lightblue">
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-12">
+                <h2 class="text-center">Organized events (${organizedEventsKey.size()})</h2>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-12">
+                <table class="table table-striped">
+                    <tr class="text-center" style="background-color:lightcyan">
+                        <th>Event name</th>
+                        <th>Description</th>
+                        <th>City</th>
+                        <th>Starting date</th>
+                    </tr>
+                    <c:forEach items="${organizedEventsKey}" var="event">
+                        <tr class="text-center">
+                            <td><a href="/event/event/${event.id}">${event.name}</a></td>
+                            <td>${event.description}</td>
+                            <td><a href="/city/city/${event.city.id}">${event.city.name}</a></td>
+                            <td>${event.startingDate}</td>
+                        </tr>
+                    </c:forEach>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
 <jsp:include page="../include/footer.jsp"/>
 
 <%--<script src="../../../static/js/radiobuttons.js"></script>--%>
