@@ -19,6 +19,16 @@
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
+#eventImage {
+    max-width: 25%;
+    height: auto;
+}
+
+#eventImage:hover {
+    transform: scale(2); /* Zoom level */
+    transition: transform .2s; /* Smooth transition */
+}
+
 
 .main404content {
     height: 600px;
