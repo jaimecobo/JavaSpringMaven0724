@@ -7,7 +7,6 @@
 --%>
 <link rel="stylesheet" href="../../../pub/css/global.css">
 
-
 <style>
     .center-container {
         display: flex;
@@ -38,8 +37,6 @@
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
 <jsp:include page="../include/header.jsp" />
-
-
 
 <section style="background-color:#C2E8DF">
     <h1 class="page-title text-center">${cityKey.name} ${cityKey.stateProvinceDepartmentTerritory} city details</h1>
@@ -95,7 +92,6 @@
 
     const checkbox = document.getElementById('cityVisited');
     const label = document.getElementById('labelVisitedOrNot');
-    // var statusField = checkbox.checked ? 1 : 0;
 
     checkbox.addEventListener('change', function() {
         var statusField = this.checked ? 1 : 0;
@@ -117,9 +113,5 @@
     });
     // console.log("checkbox.checked: " + checkbox.checked);
     // console.log("statusField: " + statusField);
-
-    <%--fetch(`/visitedcity/SaveAsVisitedCity?status=`+statusField+`&cityId=${cityKey.id}`, {})--%>
-    <%--    .then(data => {console.log('success', data)})--%>
-    <%--    .catch(error => console.error('Error:', error));--%>
 
 </script>
