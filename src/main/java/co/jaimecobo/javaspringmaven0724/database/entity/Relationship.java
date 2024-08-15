@@ -1,6 +1,5 @@
 package co.jaimecobo.javaspringmaven0724.database.entity;
 
-
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -39,4 +38,5 @@ public class Relationship {
     @Column(name = "created_at", updatable = false,  nullable = false, columnDefinition = "timestamp default current_timestamp")
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdAt;
+
 }
