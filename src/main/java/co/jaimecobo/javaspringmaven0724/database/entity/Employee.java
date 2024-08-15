@@ -31,4 +31,5 @@ public class Employee {
     @Column(name = "create_date", updatable = false, nullable = false, columnDefinition = "timestamp default current_timestamp")
     @Temporal(TemporalType.TIMESTAMP)
     private Date createDate;
+
 }
