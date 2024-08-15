@@ -5,13 +5,6 @@
   Time: 3:02 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%--
-  Created by IntelliJ IDEA.
-  User: jaime
-  Date: 7/25/2024
-  Time: 9:33 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:include page="../include/header.jsp"/>
 
@@ -79,4 +72,3 @@
 </section>
 
 <jsp:include page="../include/footer.jsp"/>
-
