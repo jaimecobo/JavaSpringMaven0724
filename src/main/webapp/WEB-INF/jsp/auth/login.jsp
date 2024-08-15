@@ -5,7 +5,6 @@
   Time: 9:33 PM
   To change this template use File | Settings | File Templates.
 --%>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <jsp:include page="../include/header.jsp" />
@@ -18,7 +17,6 @@
     </div>
 </div>
 </section>
-
 
 <section>
     <div class="container">
@@ -38,29 +36,12 @@
                     <!-- email input -->
                     <div class="row align-items-center justify-content-center">
                         <div class="col-2">
-<%--                            <label for="emailId" class="col-form-label">Email</label>--%>
                             <label for="usernameId" class="col-form-label">Email</label>
-
                         </div>
                         <div class="col-4">
-<%--                            <input type="text" id="emailId" name="username" class="form-control <c:if test="${bindingResult.hasFieldErrors('email')}">is-invalid</c:if>" value="${form.email}">--%>
-                            <input type="text" id="usernameId" name="username" class="form-control"
-<%--                        <c:if test="${bindingResult.hasFieldErrors('email')}">is-invalid</c:if>"--%>
-<%--                                   value="${form.email}"--%>
-                            />
+                            <input type="text" id="usernameId" name="username" class="form-control"/>
                         </div>
                     </div>
-<%--                    <c:if test="${bindingResult.hasFieldErrors('email')}">--%>
-<%--                        <div class="row align-items-center justify-content-center">--%>
-<%--                            <div class="offset-2 col-4">--%>
-<%--                                <div class="text-danger">--%>
-<%--                                    <c:forEach items="${bindingResult.getFieldErrors('email')}" var="error">--%>
-<%--                                        ${error.defaultMessage}<br>--%>
-<%--                                    </c:forEach>--%>
-<%--                                </div>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                    </c:if>--%>
 
                     <!-- password input field -->
                     <div class="row align-items-center justify-content-center pt-3">
@@ -72,20 +53,8 @@
                                    id="passwordId"
                                    name="password"
                                    class="form-control"
-<%--                                   value="${form.password}">--%>
                         </div>
                     </div>
-<%--                    <c:if test="${bindingResult.hasFieldErrors('password')}">--%>
-<%--                        <div class="row align-items-center justify-content-center">--%>
-<%--                            <div class="offset-2 col-4">--%>
-<%--                                <div style="color:red">--%>
-<%--                                    <c:forEach items="${bindingResult.getFieldErrors('password')}" var="error">--%>
-<%--                                        ${error.defaultMessage}<br>--%>
-<%--                                    </c:forEach>--%>
-<%--                                </div>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                    </c:if>--%>
 
                     <div class="row justify-content-center pt-3 ">
                         <div class="col-auto text-center">
@@ -100,4 +69,3 @@
 
 
 <jsp:include page="../include/footer.jsp" />
-
