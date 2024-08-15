@@ -5,7 +5,6 @@
   Time: 10:21 AM
   To change this template use File | Settings | File Templates.
 --%>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <jsp:include page="../include/header.jsp" />
@@ -19,24 +18,6 @@
         </div>
     </div>
 </section>
-
-
-<%--<section>--%>
-<%--    <div class="container">--%>
-<%--        <div class="row justify-content-center pt-5 pb-3">--%>
-<%--            <div class="col-8 text-center">--%>
-<%--                <form action="/city/searchcity">--%>
-<%--                    <div class="mb-3">--%>
-<%--                        <label for="name" class="form-label"><h4>Search for city</h4></label>--%>
-<%--                        <input type="text" value="${city}" class="form-control" id="name" name="name"--%>
-<%--                               placeholder="Enter city name"/>--%>
-<%--                    </div>--%>
-<%--                    <button type="submit" class="btn btn-primary">Search</button>--%>
-<%--                </form>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--    </div>--%>
-<%--</section>--%>
 
 <section>
     <div class="container">
