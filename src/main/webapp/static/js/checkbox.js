@@ -1,4 +1,3 @@
-
 const checkbox = document.getElementById('cityVisited');
 const label = document.getElementById('labelVisitedOrNot');
 
