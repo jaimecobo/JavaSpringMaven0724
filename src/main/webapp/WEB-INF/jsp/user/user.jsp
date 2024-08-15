@@ -160,7 +160,7 @@
                             <td>${following.city}</td>
                             <td>${following.state}</td>
                             <td>${following.country}</td>
-                                <%--                            <td><a href="/user/edit-user?userId=${following.id}">edit</a></td>--%>
+<%--                            <td><a href="/user/edit-user?userId=${following.id}">edit</a></td>--%>
                         </tr>
                     </c:forEach>
                 </table>
@@ -223,4 +223,3 @@
     });
 
 </script>
-
