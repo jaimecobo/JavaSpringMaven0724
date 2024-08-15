@@ -30,7 +30,6 @@
         <div class="row pt-5 ">
             <div class="col-12">
                 <form action="/user/submit-user" method="post" enctype="multipart/form-data">
-<%--                    <input type="hidden" name="employeeId" value="${form.userId}">--%>
                     <input type="hidden" name="userId" value="${form.userId}">
 
 
@@ -361,19 +360,5 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <jsp:include page="../include/footer.jsp"/>
