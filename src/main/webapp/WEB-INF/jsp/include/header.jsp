@@ -77,8 +77,8 @@
                     </li>
                 </sec:authorize>
 
-
             </ul>
+
 
             <sec:authorize access="isAuthenticated()">
                     <a class="btn btn-outline-danger" href="/account/logout">Logout</a>
