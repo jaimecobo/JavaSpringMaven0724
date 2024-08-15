@@ -40,11 +40,6 @@
 
     <section>
         <div class="container">
-            <%--            <div class="row pt-5">--%>
-            <%--                <div class="col-12">--%>
-            <%--                    <h2 class="text-center">Employees found (${employees.size()})</h2>--%>
-            <%--                </div>--%>
-            <%--            </div>--%>
             <div class="row pt-3">
                 <div class="col-12">
                     <table class="table table-striped">
@@ -55,7 +50,6 @@
                             <th>Password</th>
                             <th>Edit</th>
                         </tr>
-                        <%--                        <c:forEach items="${employees}" var="employee">--%>
                         <tr class="text-center">
                             <td><a href="/employee/employee/${employee.id}">${employee.id}</a></td>
                             <td>${employee.email}</td>
@@ -63,7 +57,6 @@
                             <td>${employee.password}</td>
                             <td><a href="/employee/edit-employee?employeeId=${employee.id}">edit</a></td>
                         </tr>
-                        <%--                        </c:forEach>--%>
                     </table>
                 </div>
             </div>
