@@ -1,4 +1,3 @@
-
 document.getElementById('unfollow').addEventListener('click', function(){
     if (this.checked) {
         fetch(`/relationship/followedOrNot?status=`+0+`&userId=${userKey.id}`)
