@@ -1,6 +1,5 @@
 package co.jaimecobo.javaspringmaven0724.service;
 
-
 import co.jaimecobo.javaspringmaven0724.database.dao.CityDAO;
 import co.jaimecobo.javaspringmaven0724.database.dao.EventDAO;
 import co.jaimecobo.javaspringmaven0724.database.dao.UserDAO;
@@ -29,8 +28,10 @@ public class EventService {
 
     @Autowired
     private AuthenticatedUserUtilities authenticatedUserUtilities;
+
     @Autowired
     private CityDAO cityDAO;
+
     @Autowired
     private UserDAO userDAO;
 
