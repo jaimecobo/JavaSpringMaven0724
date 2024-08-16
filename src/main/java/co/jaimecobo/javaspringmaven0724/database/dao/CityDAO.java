@@ -14,5 +14,4 @@ public interface CityDAO extends JpaRepository<City, Long> {
     @Query("SELECT c FROM City c ORDER BY c.name")
     List<City> findAllOrderedByCity();
 
-//    List<City> findAllCities();
 }
