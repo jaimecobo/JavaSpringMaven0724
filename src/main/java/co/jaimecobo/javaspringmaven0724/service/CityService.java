@@ -26,7 +26,7 @@ public class CityService {
 
     @Autowired
     private AuthenticatedUserUtilities authenticatedUserUtilities;
-//
+
     public City createCity(CreateCityFormBean form) {
         log.debug(form.toString());
         City city = cityDAO.findById(form.getCityId());
