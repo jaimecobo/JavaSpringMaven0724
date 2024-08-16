@@ -17,6 +17,7 @@ public class CityImageFileValidator {
 
         String fileExtension = getFileExtension(fileName);
         return Arrays.asList(allowedExtensions).contains(fileExtension) && Arrays.asList(allowedMimeTypes).contains(mimeType);
+
     }
 
 }
