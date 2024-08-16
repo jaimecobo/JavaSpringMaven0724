@@ -19,12 +19,14 @@ public class Event {
     @Column(name = "id")
     private Integer id;
 
+
     @ToString.Exclude
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "organizer_id", nullable = false)
     private User organizer;
     @Column(name = "organizer_id", nullable = false, insertable = false, updatable = false)
     private Integer organizerId;
+
 
     @ToString.Exclude
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
