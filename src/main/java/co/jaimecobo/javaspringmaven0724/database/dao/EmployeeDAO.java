@@ -7,5 +7,4 @@ public interface EmployeeDAO extends JpaRepository<Employee, Long> {
     Employee findById(Integer id);
     Employee findByEmailIgnoreCase(String email);
 
-
 }
