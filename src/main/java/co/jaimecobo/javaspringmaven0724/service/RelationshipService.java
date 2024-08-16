@@ -1,6 +1,5 @@
 package co.jaimecobo.javaspringmaven0724.service;
 
-
 import co.jaimecobo.javaspringmaven0724.database.dao.RelationshipDAO;
 import co.jaimecobo.javaspringmaven0724.database.dao.UserDAO;
 import co.jaimecobo.javaspringmaven0724.database.entity.Relationship;
@@ -38,4 +37,5 @@ public class RelationshipService {
         return relationship;
 
     }
+
 }
