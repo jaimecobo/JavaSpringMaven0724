@@ -1,7 +1,6 @@
 package co.jaimecobo.javaspringmaven0724.database.dao;
 
 import co.jaimecobo.javaspringmaven0724.database.entity.Comment;
-import co.jaimecobo.javaspringmaven0724.database.entity.Like;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
