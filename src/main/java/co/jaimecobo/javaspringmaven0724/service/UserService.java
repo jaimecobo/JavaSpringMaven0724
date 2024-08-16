@@ -2,7 +2,6 @@ package co.jaimecobo.javaspringmaven0724.service;
 
 import co.jaimecobo.javaspringmaven0724.database.dao.UserDAO;
 import co.jaimecobo.javaspringmaven0724.database.dao.UserRoleDAO;
-import co.jaimecobo.javaspringmaven0724.database.entity.EmployeeRole;
 import co.jaimecobo.javaspringmaven0724.database.entity.User;
 import co.jaimecobo.javaspringmaven0724.database.entity.UserRole;
 import co.jaimecobo.javaspringmaven0724.form.CreateUserFormBean;
@@ -39,7 +38,6 @@ public class UserService {
         if (user == null) {
             user = new User();
         }
-
 
         user.setUsername(form.getUsername());
         user.setEmail(form.getEmail());
@@ -102,4 +100,5 @@ public class UserService {
         return cityImageFileValidator.isValidFileSize(file.getSize()) && cityImageFileValidator.isValidFileType(fileName, URLConnection.guessContentTypeFromName(fileName));
 
     }
+
 }
