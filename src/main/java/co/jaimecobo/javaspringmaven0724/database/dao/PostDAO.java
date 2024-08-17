@@ -9,4 +9,5 @@ public interface PostDAO extends JpaRepository<Post, Long> {
     Post findById(Integer id);
 
     List<Post> findByUserId(Integer id);
+
 }
