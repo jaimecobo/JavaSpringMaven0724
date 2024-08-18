@@ -1,6 +1,5 @@
 package co.jaimecobo.javaspringmaven0724.service;
 
-
 import co.jaimecobo.javaspringmaven0724.database.dao.CityDAO;
 import co.jaimecobo.javaspringmaven0724.database.dao.VisitedCityDAO;
 import co.jaimecobo.javaspringmaven0724.database.entity.VisitedCity;
