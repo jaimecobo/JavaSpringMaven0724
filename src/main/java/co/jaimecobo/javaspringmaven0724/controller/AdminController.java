@@ -39,6 +39,7 @@ public class AdminController {
 
     public AdminController(AuthenticatedUserUtilities authenticatedUserUtilities) {
         this.authenticatedUserUtilities = authenticatedUserUtilities;
+
     }
 
 //    @Autowired
@@ -63,6 +64,7 @@ public class AdminController {
         List<City> cityList = cityDAO.findAll();
         response.addObject("citiesKey", cityList);
         return response;
+
     }
 
 }
