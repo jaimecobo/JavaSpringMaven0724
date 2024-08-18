@@ -33,7 +33,6 @@ public class CityService {
         if (city == null) {
             city = new City();
         }
-
         city.setName(form.getName());
         city.setStateProvinceDepartmentTerritory(form.getStateProvinceDepartmentTerritory());
         city.setCountry(form.getCountry());
