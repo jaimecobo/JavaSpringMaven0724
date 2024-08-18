@@ -15,6 +15,7 @@ public class VisitedCityController {
 
     @Autowired
     private VisitedCityDAO visitedCityDAO;
+
     @Autowired
     private VisitedCityService visitedCityService;
 
