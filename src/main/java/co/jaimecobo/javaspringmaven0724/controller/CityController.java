@@ -68,6 +68,7 @@ public class CityController {
         List<City> cityList = cityDAO.findByNameIgnoreCase(name);
         response.addObject("cities", cityList);
         return response;
+
     }
 
 
@@ -168,6 +169,5 @@ public class CityController {
         return response;
 
     }
-
 
 }
