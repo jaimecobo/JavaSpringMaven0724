@@ -1,6 +1,5 @@
 package co.jaimecobo.javaspringmaven0724.controller;
 
-import co.jaimecobo.javaspringmaven0724.database.dao.RelationshipDAO;
 import co.jaimecobo.javaspringmaven0724.database.dao.UserDAO;
 import co.jaimecobo.javaspringmaven0724.database.entity.Relationship;
 import co.jaimecobo.javaspringmaven0724.database.entity.User;
@@ -18,7 +17,6 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("/relationship")
 public class RelationshipController {
-
 
     @Autowired
     private RelationshipService relationshipService;
