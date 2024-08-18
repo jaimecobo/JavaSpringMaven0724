@@ -41,7 +41,6 @@ public class EventService {
         if (event == null) {
             event = new Event();
         }
-
         event.setName(form.getName());
         event.setDescription(form.getDescription());
         event.setOrganizer(userDAO.findById(authenticatedUserUtilities.getCurrentUser().getId()));
