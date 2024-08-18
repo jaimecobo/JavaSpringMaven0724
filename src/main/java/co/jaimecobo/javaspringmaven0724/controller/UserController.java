@@ -102,7 +102,6 @@ public class UserController {
         response.addObject("ListOfFollowersKey", ListOfFollowers);
         List<Map<String, Object>> ListOfWhoYouFollow = relationshipDAO.getWhoUserFollows(id);
         response.addObject("ListOfWhoYouFollowKey", ListOfWhoYouFollow);
-        //TO DO include table for organized events
         List<Event> organizedEventsList = eventDAO.findByOrganizerId(id);
         response.addObject("organizedEventsKey", organizedEventsList);
         List<Map<String, Object>> listOfVisitedCities = visitedCityDAO.findByUserId(id);
@@ -115,6 +114,7 @@ public class UserController {
         response.addObject("listOfLikesKey", listOfLikes);
 
         return response;
+        
     }
 
 
