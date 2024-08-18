@@ -32,7 +32,6 @@ public class EmployeeService {
         if(employee == null){
             employee = new Employee();
         }
-
         String encryptedPassword = passwordEncoder.encode(form.getPassword());
         employee.setPassword(encryptedPassword);
         employee.setEmail(form.getEmail());
