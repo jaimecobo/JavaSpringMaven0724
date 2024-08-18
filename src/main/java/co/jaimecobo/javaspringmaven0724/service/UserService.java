@@ -38,7 +38,6 @@ public class UserService {
         if (user == null) {
             user = new User();
         }
-
         user.setUsername(form.getUsername());
         user.setEmail(form.getEmail());
         String encryptedPassword = passwordEncoder.encode(form.getPassword());
