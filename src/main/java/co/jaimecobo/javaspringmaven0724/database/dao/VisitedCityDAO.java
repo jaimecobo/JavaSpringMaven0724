@@ -19,5 +19,4 @@ public interface VisitedCityDAO extends JpaRepository<VisitedCity, Long> {
             nativeQuery = true)
     List<Map<String, Object>> findByUserId(Integer id);
 
-
 }
