@@ -1,6 +1,5 @@
 package co.jaimecobo.javaspringmaven0724.controller;
 
-import co.jaimecobo.javaspringmaven0724.security.AuthenticatedEmployeeUtilities;
 import co.jaimecobo.javaspringmaven0724.security.AuthenticatedUserUtilities;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
@@ -23,8 +22,8 @@ public class ErrorController {
     @Autowired
     private AuthenticatedUserUtilities authenticatedUserUtilities;
 
-    // this is optional ... im just showing you some things .. this is a catch all bucket for 404 errors
-    // I am using this in seriesreminder because I need to do additional processing for a 404 page
+    // This is optional ... im just showing you some things... this is a catch-all bucket for 404 errors
+    // This is usefully in production environment because this environment may need to do additional processing for a 404 page
     @ExceptionHandler(NoResourceFoundException.class)
     @RequestMapping(value = {"/error/404", "/404"})
     public ModelAndView error404(HttpServletRequest request) {
@@ -37,6 +36,7 @@ public class ErrorController {
         response.setStatus(HttpStatus.NOT_FOUND);
 
         return response;
+
     }
 
 
@@ -83,9 +83,8 @@ public class ErrorController {
         }
 
         return response;
+
     }
-
-
 
     private String getHTMLStackTrace(String[] stack) {
         StringBuffer result = new StringBuffer();
@@ -99,6 +98,7 @@ public class ErrorController {
         }
 
         return result.toString();
+
     }
 
 }
