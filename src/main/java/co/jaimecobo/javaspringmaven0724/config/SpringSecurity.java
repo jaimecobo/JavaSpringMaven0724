@@ -25,9 +25,7 @@ public class SpringSecurity {
 
         // This section allows all pages EXCEPT the ones that are in the AntPathRequestMatcher
         // Anything in AntPathRequestMatcher will require the user authentication
-        http.authorizeRequests()
-                .requestMatchers
-            (
+        http.authorizeRequests().requestMatchers(
             new AntPathRequestMatcher("/admin/**"),
             new AntPathRequestMatcher("/city/**"),
             new AntPathRequestMatcher("/user/all-users"),
@@ -35,8 +33,7 @@ public class SpringSecurity {
             new AntPathRequestMatcher("/user/users-by-city"),
             new AntPathRequestMatcher("/user/user/**"),
             new AntPathRequestMatcher("/event/**")
-            ).authenticated()
-            .anyRequest().permitAll();
+            ).authenticated().anyRequest().permitAll();
 
         // The loginPage parameter is the actual URL of the login page
         // The loginProcessingUrl is the URL that the form will submit to
