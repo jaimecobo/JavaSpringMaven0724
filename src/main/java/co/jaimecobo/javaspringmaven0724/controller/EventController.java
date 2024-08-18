@@ -60,6 +60,7 @@ public class EventController {
         List<Event> eventsList = eventDAO.findByNameIgnoreCase(name);
         response.addObject("eventsKey", eventsList);
         return response;
+
     }
 
     @GetMapping("/events-by-city")
@@ -72,6 +73,7 @@ public class EventController {
         List<Event> listOfEventsFoundInCity = eventDAO.findByCity(city);
         response.addObject("eventsInCityKey", listOfEventsFoundInCity);
         return response;
+
     }
 
 
@@ -94,6 +96,7 @@ public class EventController {
         ModelAndView response = new ModelAndView("event/create-event");
         response.addObject("citiesKey", ListOfCities);
         return response;
+
     }
 
 
@@ -165,6 +168,7 @@ public class EventController {
             }
         }
         return response;
+
     }
 
 
@@ -187,7 +191,5 @@ public class EventController {
         return response;
 
     }
-
-
 
 }
